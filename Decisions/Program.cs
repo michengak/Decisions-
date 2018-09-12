@@ -48,9 +48,19 @@ namespace Decisions
             string userVAlue = Console.ReadLine();
 
             string message = (userVAlue == "1") ? "boat" : "strand of lint";
-            Console.WriteLine("You won a ");
-            Console.WriteLine(message);
-            Console.Write(".");
+
+            //Console.WriteLine("You won a ");
+            //Console.WriteLine(message);
+            //Console.Write(".");
+
+            // replacement of the three consoles Write with ==>
+
+            // Console.WriteLine("You won a {0}.", message);
+
+            //same idea with two replacement.
+
+            Console.WriteLine("You entered: {0}, therefore you won a {1}.", userVAlue, message);
+
             Console.ReadLine();
 
 
